@@ -1,6 +1,6 @@
-#import "lib/zp.asm"
-#import "lib/io.asm"
-#import "lib/kernal.asm"
+#import "../../lib/zp.asm"
+#import "../../lib/io.asm"
+#import "../../lib/kernal.asm"
 
 //-----------------------------------------------------------------------------------
 :BasicUpstart2(main)
@@ -20,9 +20,9 @@ hellotxt:
 //-----------------------------------------------------------------------------------
 main: {    
     lda #BLACK
-    sta IO.BORDER
-    sta IO.BACKGROUND
-    jsr KERNAL.CLEARSCREEN
+    sta VIC.BACKGROUND 
+    sta VIC.BORDER
+    jsr KERNAL.CLEAR_SCREEN
     ldx #<hellotxt
     lda #>hellotxt
     jsr print
