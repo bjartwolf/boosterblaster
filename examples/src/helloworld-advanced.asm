@@ -1,7 +1,7 @@
 
-#import "lib/zp.asm"
-#import "lib/vic.asm"
-#import "lib/kernal.asm"
+#import "../../lib/zp.asm"
+#import "../../lib/io.asm"
+#import "../../lib/kernal.asm"
 
 //-----------------------------------------------------------------------------------
 :BasicUpstart2(main)
@@ -21,9 +21,9 @@ hellotxt:
 //-----------------------------------------------------------------------------------
 main: {    
     lda #BLACK
-    sta IO.BORDER
-    sta IO.BACKGROUND
-    jsr KERNAL.CLEARSCREEN
+    sta VIC.BORDER
+    sta VIC.BACKGROUND 
+    jsr KERNAL.CLEAR_SCREEN
 
     // Simple print using a pointer to a string
     ldx #<hellotxt
@@ -46,9 +46,9 @@ loop:
 !:  cmp $d012 // wait for raster to arrive at line 100 on screen
     bne !-
     
-    inc IO.BORDER // use border to show how much time it takes
+    inc VIC.BORDER 
     :PrintXY("KERNAL IS SLOW!",10,10)
-    dec IO.BORDER
+    dec VIC.BORDER 
     lda $d012
 
     jmp loop
