@@ -116,6 +116,9 @@ Goattracker for SID Music creation: https://csdb.dk/release/?id=152420
 
 Exomizer for compressing program/data for unpacking on C64: https://csdb.dk/release/?id=173655
 
+## Debugger
+https://sourceforge.net/projects/c64-debugger/files/latest/download
+
 # Some useful links
 
 An overview of the full 6502 instruction set
