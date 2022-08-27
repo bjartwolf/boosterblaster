@@ -17,5 +17,5 @@
     //"kickassembler.javaRuntime": "C:\\Program Files\\Java\\jre1.8.0_201\\bin\\java.exe",
     "kickassembler.javaRuntime": " /usr/bin/java",
     //"kickassembler.emulatorRuntime": "C:\\Applications\\Vice\\x64.exe",
-    "kickassembler.emulator.runtime": "/{path-to-repo}/tools/vice/bin/x64sc.exe",
+    "kickassembler.emulator.runtime": "C:\\code\\boosterblaster\\tools\\vice\\bin\\x64sc.exe",
 }
