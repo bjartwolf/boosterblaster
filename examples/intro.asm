@@ -53,7 +53,7 @@ doStuffAgain: {
 //-------------------------------------------------------------------------------
 // The compiler also supports importing binary as well as source files
 
-.import source "lib/io.asm"   // import the file io.asm directly into source at this position
+.import source "../lib/io.asm"   // import the file io.asm directly into source at this position
 
 .import binary "res/sprites.bin"  // import a binary file into code at this position
 
