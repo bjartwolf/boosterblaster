@@ -2,9 +2,9 @@
 // We can split up code in several files and import them as needed
 // Import some to simplify coding the C64 zp/io/kernal
 //-----------------------------------------------------------------------------------
-#import "lib/zp.asm"
-#import "lib/io.asm"
-#import "lib/kernal.asm"
+#import "../../lib/zp.asm"
+#import "../../lib/io.asm"
+#import "../../lib/kernal.asm"
 
 // Adds a short basic program that does as SYS basic command to the start
 //-----------------------------------------------------------------------------------
